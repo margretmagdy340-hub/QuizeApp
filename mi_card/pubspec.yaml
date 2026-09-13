@@ -76,3 +76,11 @@ flutter:
         weight: 400
       - asset: assets\font\Pacifico\Manrope\static\Manrope-SemiBold.ttf
         weight: 600
+   - family: abhaya-libre
+     fonts:
+     - asset: assets/font/Pacifico/abhaya-libre/AbhayaLibre-Regular.ttf
+   - family: Poppins
+     fonts:
+     - asset: assets/font/Poppins-Light.ttf
+      
+        

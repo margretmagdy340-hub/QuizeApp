@@ -1,41 +1,51 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/get_core.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
+import 'package:mi_card/counter_app/counter_controller.dart';
 
-class Counter extends StatefulWidget {
-  const Counter({super.key});
+class counter extends StatelessWidget{
+counter({super.key});
 
-  @override
-  State<Counter> createState() => _CounterState();
-}
+final CounterController controller = Get.put(CounterController());
+@override
+ Widget build(BuildContext context){
+  return Scaffold(
+    body: Column(
+      children: [
+      Center(
+        child: Obx((){
+          return Text(
+          controller.counter.toString(),style:
+           TextStyle(color: const Color.fromARGB(204, 98, 10, 114),
+           fontSize: 100)
+          ) ;}),
+      ),
+    GestureDetector(onTap:(){
+       controller.increment();},
+       child: Container(
+       height: 50,width: 50,
+       color: const Color.fromARGB(255, 36, 75, 143),
+       child: Icon(Icons.add)
+        )),
+       SizedBox(height: 30,),
+       GestureDetector(onTap:(){controller.increment2();},
+       child: Container(height: 50,width: 50,
+       color: const Color.fromARGB(255, 33, 155, 108),child: Icon(Icons.add),
+      ),
+     ),
+      SizedBox(height: 30,),
 
-class _CounterState extends State<Counter> {
-int counter=0;
-  @override
- Widget build(BuildContext context) {
- return Scaffold(
-body:Column(children: [
-
-Text(counter.toString(),style:
- TextStyle(color: const Color.fromARGB(255, 9, 16, 109),fontSize:30,),),
-     
-Row(children: [
-GestureDetector(onTap: (){ setState(() {counter++;});},child:
-Container( child:Icon(Icons.add),width: 50,
-height: 50,
-color:Color.fromARGB(255, 79, 70, 160)),),
-
-SizedBox(width: 50),   
-
-GestureDetector(onTap: () {setState(() {counter--; });},child: 
- Container(child:Icon(Icons.minimize_sharp),width:50,height:50,color:Colors.deepPurpleAccent,),)
+      GestureDetector(onTap: (){controller.increment3();},
+      child: Container(
+       height: 50,width: 50,
+       color: const Color.fromARGB(255, 95, 25, 54),
+       child: Icon(Icons.add)
+        )
       
-      
-]
-       
-) , 
-
-]
-)
-);
-}
+      )
+    ],),
+  );
+ }
+ 
 }

@@ -3,6 +3,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:mi_card/Task/welcomescreen%20.dart';
+import 'package:mi_card/counter_app/counter_controller.dart';
 import 'package:mi_card/quize_app/Quize.dart';
 import 'package:mi_card/Quize2.dart';
 import 'package:mi_card/ThirdScreen.dart';
@@ -14,7 +16,7 @@ import 'package:mi_card/counter_app/counter.dart';
 import 'package:mi_card/splashScreen.dart';
 
 void main() {
-  runApp(MaterialApp(debugShowCheckedModeBanner: false,home:Counter()
+  runApp(MaterialApp(debugShowCheckedModeBanner: false,home: Welcomescreen()
 ));}
   class MyApp extends StatelessWidget {
   const MyApp({super.key});

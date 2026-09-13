@@ -12,7 +12,7 @@ return Scaffold(
  body: SingleChildScrollView (child:Column(
   crossAxisAlignment: CrossAxisAlignment.start,
 children: [
-Image.asset("assets/images/church.jpg",width: double.infinity,height: 260,fit: BoxFit.cover,),
+Image.asset("",width: double.infinity,height: 260,fit: BoxFit.cover,),
 Padding(padding: EdgeInsets.all(10),
 child:Row(children:[ Expanded(
 child: Column(  
