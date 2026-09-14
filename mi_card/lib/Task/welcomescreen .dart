@@ -43,7 +43,7 @@ class _welcomeScreenState extends State<Welcomescreen>{
                        "Craft your ideal meal effortlessly\n"
                        "  with our app. Select nutritious\n"
                        "ingredients tailored to your taste\n"
-                        "      and well-being.   ",
+                        "          and well-being.   ",
                        style: TextStyle(color: Color(0xffDADADA),
                        fontSize: 20,
                         fontWeight: FontWeight.w300,
