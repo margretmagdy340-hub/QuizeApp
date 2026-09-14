@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:mi_card/Task/Screen3.dart';
 
 class Screen2 extends StatefulWidget{
@@ -13,10 +12,13 @@ class _Screen2State extends  State<Screen2>{
 
   var formkey= GlobalKey<FormState>();
   bool isValid=false;
+
 @override
 Widget build(BuildContext context){
  return Scaffold(
-  appBar: AppBar(title: 
+  appBar: AppBar(
+   // leading: Icon(Icons.chevron_up),
+    title: 
   Text("Enter your details",
   style: TextStyle(
     color: Color(0xff1E1E1E),
@@ -66,7 +68,7 @@ Widget build(BuildContext context){
                   Text("Female"),
                   Icon(Icons.check,color: Color(0xffF25700),)] )),
          
-               DropdownMenuItem(//decoration:InputDecoration()
+               DropdownMenuItem(
                 value: "2",
                 child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

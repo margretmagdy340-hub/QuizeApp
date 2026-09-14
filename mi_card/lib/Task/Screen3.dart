@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class screen3 extends StatefulWidget{
 const screen3 ({super.key});
@@ -12,8 +11,23 @@ class _Screen3State extends  State<screen3>{
 @override
 Widget build(BuildContext context){
  return Scaffold(
+  appBar:AppBar
+  (title: Text("Create your order"),),
   body: SafeArea(child: 
-  Column(
-    children: [],)),
+  Padding(
+    padding: const EdgeInsets.symmetric(horizontal: 24),
+    child: Column(
+      children: [
+        
+        SizedBox(height: 30),
+        Text("Vegetables",style: 
+        TextStyle(color: Color(0xff1E1E1E),
+        fontSize:20,
+        fontWeight: FontWeight.w500),
+        
+        ),
+    
+     ],),
+  )),
 
  );}}
