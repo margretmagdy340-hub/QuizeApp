@@ -11,8 +11,6 @@ State<Screen2> createState()=> _Screen2State();
 class _Screen2State extends  State<Screen2>{
 
   var formkey= GlobalKey<FormState>();
-  bool isValid=false;
-
 @override
 Widget build(BuildContext context){
  return Scaffold(
@@ -23,7 +21,9 @@ Widget build(BuildContext context){
   style: TextStyle(
     color: Color(0xff1E1E1E),
     fontSize: 20,
-    fontWeight: FontWeight.w500)),),
+    fontWeight: FontWeight.w500)),
+    centerTitle: true,
+    ),
    body: SafeArea(
      child: Padding(
        padding: const EdgeInsets.symmetric(horizontal: 24),
