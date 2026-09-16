@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:mi_card/api/app.dart';
+import 'package:mi_card/api/quotemodel.dart';
 
 class QuoteService {
   final Dio dio = Dio(
@@ -8,10 +8,10 @@ class QuoteService {
     ),
   );
   
-  Future<List<Quote>> getQuotes ()async{
+  Future<List<Quote>> getQuotesservice() async{
 final response = await dio.get("/quotes");
 
-final List quotes =response.data['quotes'];
+final List quotes = response.data['quotes'];
 
 return quotes
        .map((quote) => Quote.formJason(quote))

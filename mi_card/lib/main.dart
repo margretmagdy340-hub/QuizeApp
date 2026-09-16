@@ -17,12 +17,12 @@ import 'package:mi_card/counter_app/counter.dart';
 import 'package:mi_card/splashScreen.dart';
 
 void main() {
-  runApp(MaterialApp(debugShowCheckedModeBanner: false,home: screen3()
+  runApp(MaterialApp(debugShowCheckedModeBanner: false,home: Welcomescreen(),
 ));}
   class MyApp extends StatelessWidget {
   const MyApp({super.key});
 @override
-Widget build(BuildContext context) {
+Widget build(BuildContext context) { 
   return Scaffold(
     
 body:Stack(children: [
